@@ -1,0 +1,49 @@
+.rodape {
+    background: #FDFDFD;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.rodape p {
+    color: #495057;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.rodape a {
+    padding: 16px 0;
+}
+
+@media screen and (min-width: 0) {
+    .rodape{
+        align-items: center;
+        flex-direction:column;
+        padding: 1.5rem;
+    }
+
+    .rodape a img {
+        height: 30px;  
+    }
+
+    .badge {
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rodape {
+        flex-direction: row;
+    }
+
+    .rodape a img {
+        height: 15px;
+        padding: 2px 0;
+    }
+    
+    .badge {
+        height: 30px;
+    }
+}

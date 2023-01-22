@@ -1,0 +1,200 @@
+.content {
+    display: flex;
+}
+
+.principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea-principal {
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: #040404;
+    font-size: 30px;
+    height: 100%;
+    outline: none;
+    padding: 20px 12px 0 20px;
+    resize: none;
+    width: 100%;
+}
+
+.aviso {
+    color: #070707;
+    font-size: 16px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.botoes {
+    display: flex;
+}
+
+#botao-criptografar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+#botao-descriptografar {
+    background-color:  #0A3871;
+    color: #FFFFFF;
+}
+
+.botao {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 50px;
+}
+
+#botao-criptografar:hover, .copiar:hover {
+    background-color: #CED4DD;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#botao-descriptografar:hover {
+    background-color: #CED4DD;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sessao-texto-resultante {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-resultante {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.textarea {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #070707;
+    font-size: 20px;
+    height: 100%;
+    outline: none;
+    padding: 10px 20px;
+    resize: none;
+    text-align: center;
+    width: 100%;
+}
+
+.copiar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 0) {
+    .content {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /*ENTRADA DE TEXTO E BOTOES*/
+    .principal {
+        height: 450px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .aviso {
+        text-align: center;
+    }
+
+    .botoes {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .botao {
+        margin: 0 0 1rem 0;
+    }
+
+    .sessao-texto-resultante {
+        height: 250px;
+        width: 100vw;
+    }
+
+    .texto-resultante {
+        background: #FFFFFF;
+        width: 90%;
+    }
+
+    .copiar {
+        margin: 0;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .principal {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .botoes {
+        width: 50%;
+    }
+
+    .texto-resultante {
+        width: 80%;
+    }
+
+    .copiar {
+        margin-top: 1.5rem;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        flex-direction: row;
+        margin: 1% 10% 0px 10%;
+    }
+
+    .principal {
+        height: 500px;
+        margin: 0;
+        width: 60%;
+    }
+
+    .aviso {
+        text-align: left;
+    }
+
+    .botoes {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .botao {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .sessao-texto-resultante {
+        height: 500px;
+        width: 40%;
+    }
+
+    .texto-resultante {
+        background: #FFFFFF url("../img/fundoTextarea.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 250px;
+        width: 70%;
+    }
+
+    .copiar {
+        width: auto;
+    }
+}

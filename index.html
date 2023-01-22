@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Decodificador de Texto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cf2a940c56.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/rodape.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img src="img/logoAlura.png" alt="Logo Alura" class="logo">
+        </header>
+
+        <div class="content">
+
+            <section class="principal">
+                <textarea id="textarea1"class="textarea-principal" placeholder="Digite seu texto"></textarea>
+                <p class="aviso">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Somente letras minúsculas e sem acento!
+                    </p>
+                <div class="botoes">
+                    <button id="botao-criptografar" class="botao">Criptografar</button>
+                    <button id="botao-descriptografar" class="botao">Descriptografar</button>   
+                </div>
+                
+            </section>
+
+            <sectionS class="sessao-texto-resultante">
+                <div class="texto-resultante">
+                    <textarea id="textarea2" class="textarea" placeholder="Resultado aqui" readonly></textarea>  
+                </div>
+                <button id="botao-copiar" class="botao copiar">Copiar texto</button>
+            </sectionS>
+        </div>
+
+        <footer class="rodape">
+            <div class="imagem-rodape">
+                <a href="https://www.linkedin.com/in/AlexCampos30" target="_blank"><img src="img/linkedin-logo.png"></a>
+                <a href="https://github.com/AlexCampos30" target="_blank"><img src="img/github-logo.png"></a>    
+            </div>
+            <p>Desenvolvido por: Alex Campos &copy; 2023</p>
+            <p>Oracle Next Education T3 | Alura </p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body> 
+</html>
